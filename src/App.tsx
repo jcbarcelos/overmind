@@ -6,7 +6,7 @@ import GlobalStyles from "./styles/global";
 import light from "./styles/themes/light";
 import dark from "./styles/themes/dark";
 import usePersistedState from "./utils/usePersistedState";
-import Form from "./components/form";
+import Form from "./components/form/index";
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
